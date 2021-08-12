@@ -1,13 +1,15 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-@import "components/status-bar.css";
+@import "variables.css";
 
 /* Components */
-@import "variables.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
 
 /* Screens */
 @import "screens/login.css";
 
 body {
   font-family: "Bree Serif", serif;
+  height: 1000vh;
 }
