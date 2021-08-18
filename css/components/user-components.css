@@ -1,10 +1,12 @@
 .user-components {
   justify-content: space-between;
+  margin: 0px var(--horizontal-space);
 }
 
 .user-components,
-.user-components__column {
+.user-components__column:first-child {
   display: flex;
+
   align-items: center;
 }
 
@@ -12,12 +14,12 @@
   width: 70px;
   height: 70px;
   border-radius: 25px;
-  margin: 0px var(--horizontal-space);
   margin-top: 10px;
+  margin-right: 20px;
 }
 
 .user-components__text {
-  margin-left: 27px;
+  margin-left: 2px;
 }
 
 .user-components__title {
@@ -25,10 +27,10 @@
   font-weight: 500;
 }
 
-.user-components_subtitle {
+.user-components__subtitle {
   margin-top: 8px;
-  font-size: 10px;
-  color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .friends-screens {
@@ -39,10 +41,12 @@
   width: 60px;
   height: 60px;
   border-radius: 20px;
+  margin: 0px var(--horizontal-space);
 }
 
-.user-components__text--not-bold {
+.user-components__title--not-bold {
   font-size: 15px;
+  margin: 0px var(--horizontal-space);
 }
 
 .user-components__channel {
@@ -57,4 +61,20 @@
   color: rgba(0, 0, 0, 0.5);
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.user-components__time {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.user-components__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-screen {
+  margin-left: var(--horizontal-space);
 }
