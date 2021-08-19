@@ -23,40 +23,48 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-comment-medical fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span
-        ><span><i class="fas fa-cog fa-lg"></i></span>
+    <header class="alt-header">
+      <div class="alt-header__coulmn">
+        <a href="more.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__coulmn">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__coulmn">
+        <i class="fas fa-search fa-2x"></i>
       </div>
     </header>
+
     <main class="main-screen">
-      <a href="chat.html">
-        <div class="user-components">
-          <div class="user-components__column">
-            <img
-              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg"
-              class="user-components__avatar"
-            />
-            <div class="user-components__text">
-              <h4 class="user-components__title">Son JinHyo</h4>
-              <h6 class="user-components__subtitle">
-                ballad asdas a asdas d asd asfdfsjkfsdjksdfhj
-              </h6>
-            </div>
+      <ul class="settings__list">
+        <li class="settings__setting">
+          <div class="settings__setting-coulmn">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-          <div class="user-components__column">
-            <span class="user-components__time">10:11</span>
-            <div class="user-components__badge badge">1</div>
+          <div class="settings__setting-coulmn"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-coulmn">
+            <i class="fas fa-flask"></i>
+            <span>Kokoa Lab</span>
           </div>
-        </div>
-      </a>
+          <div class="settings__setting-coulmn"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-coulmn">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-coulmn">Lastest Version</div>
+        </li>
+      </ul>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
+    <nav class="nav more-nav">
+      <ul class="nav__list more-nav">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
             ><i class="far fa-user fa-2x"></i
@@ -65,12 +73,12 @@
         <li class="nav_btnk">
           <a class="nav__link" href="chats.html"
             ><span class="nav__notification badge">1</span
-            ><i class="fas fa-comment fa-2x"></i
+            ><i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
+            ><i class="fas fa-search-plus fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">

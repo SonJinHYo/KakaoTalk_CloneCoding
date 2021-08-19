@@ -13,3 +13,11 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.alt-header__coulmn span {
+  margin-left: 30px;
+}
+
+.alt-header__title {
+  margin-right: -100px;
+}
