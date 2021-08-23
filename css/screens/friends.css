@@ -88,3 +88,27 @@
 .more-mod {
   margin-left: 25px;
 }
+
+@keyframes hidesSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splah-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  animation: hidesSplashScreen 0.2s ease-in-out forwards;
+  animation-delay: 1s;
+}

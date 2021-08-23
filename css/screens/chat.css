@@ -83,3 +83,64 @@
 .message-row--own {
   justify-content: flex-end;
 }
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+}
+
+.reply .reply__coulmn:first-child {
+  width: 10%;
+}
+
+.reply .reply__coulmn:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 90%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.reply__coulmn:last-child > i,
+.reply__coulmn:last-child button {
+  position: absolute;
+  top: 2px;
+  right: 44px;
+}
+
+.reply__coulmn:last-child > i {
+  right: 80px;
+  top: 8px;
+}
+
+.reply__coulmn button {
+  background-color: var(--yellow);
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+}
+
+.reply__coulmn button:focus,
+.reply__coulmn button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply__coulmn button i {
+  opacity: 1;
+}
