@@ -21,3 +21,16 @@
 .alt-header__title {
   margin-right: -100px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog {
+  animation: rotateCog 10s linear infinite;
+}
