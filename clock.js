@@ -1,4 +1,4 @@
-const clock = document.querySelector(".status-bar__coulmn span");
+const clock = document.querySelector(".status-bar:nth child(2) span");
 
 function getClock() {
   const date = new Date();
@@ -6,7 +6,7 @@ function getClock() {
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
 
-  clock.innerText = `${hours}:${minutes}:${seconds}`;
+  clock.innerText = `${hours}:${minutes}`;
 }
 getClock();
 setInterval(getClock, 1000);
