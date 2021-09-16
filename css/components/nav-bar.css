@@ -20,13 +20,16 @@
 
 @keyframes notificationAnimation {
   0% {
-    transform: none;
+    transform: translateY(-5px) rotateX(0deg);
   }
   50% {
-    transform: translateY(-5px) rotateX(30deg);
+    transform: none;
+  }
+  75% {
+    transform: translateY(3px) rotateX(30deg);
   }
   100% {
-    translatey: none;
+    transform: translateY(-5px) rotateX(0deg);
   }
 }
 
@@ -34,7 +37,7 @@
   position: absolute;
   left: 20px;
   top: -22px;
-  animation: notificationAnimation 1.5s ease-in-out infinite;
+  animation: notificationAnimation 0.8s ease-in-out infinite;
 }
 
 .nav__notification2 {

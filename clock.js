@@ -1,4 +1,4 @@
-const clock = document.querySelector(".status-bar:nth child(2) span");
+const clock = document.querySelector(".status-bar__coulmn:nth-child(2)");
 
 function getClock() {
   const date = new Date();
